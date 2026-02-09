@@ -141,8 +141,11 @@
         }
         .about-img img {
             width: 100%;
+            max-width: 500px;
+            height: auto;
             border-radius: 8px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            object-fit: cover;
         }
         .about-text h3 {
             font-size: 1.8rem;
@@ -199,9 +202,12 @@
         }
         .team-card img {
             width: 100%;
+            max-width: 200px;
+            height: 200px;
             border-radius: 50%;
             margin-bottom: 20px;
             border: 5px solid var(--secondary);
+            object-fit: cover;
         }
         .team-card h4 {
             font-size: 1.3rem;
@@ -333,12 +339,13 @@
             <h2 class="section-title">公司简介</h2>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="https://github.com/MaherJon/MAHE/blob/main/1755961246991_edit_371888226101585.png" alt="MAHE公司办公环境">
+                    <!-- 修复后的GitHub图片路径（raw地址） -->
+                    <img src="https://github.com/MaherJon/MAHE/raw/main/1755961246991_edit_371888226101585.png" alt="MAHE公司办公环境" loading="lazy">
                 </div>
                 <div class="about-text">
                     <h3>深耕科技领域，铸就行业标杆</h3>
-                    <p>MAHE公司成立于2022，是一家集研发、生产、销售、服务于一体的高新技术企业，总部位于[核心城市]，在全球多个地区设有分支机构和研发中心。</p>
-                    <p>公司始终坚持“技术创新为核心，客户需求为导向”的发展理念，汇聚了全球顶尖的技术人才和行业专家，拥有多项自主知识产权的核心技术，产品和服务覆盖[智能制造、人工智能、云计算、物联网]等多个领域。</p>
+                    <p>MAHE公司成立于2022，是一家集研发、生产、销售、服务于一体的高新技术企业，总部位于淄博市，在多个地区设有分支机构和研发中心。</p>
+                    <p>公司始终坚持“技术创新为核心，客户需求为导向”的发展理念，汇聚了全球顶尖的技术人才和行业专家，拥有多项自主知识产权的核心技术，产品和服务覆盖智能制造、人工智能、云计算、物联网等多个领域。</p>
                     <p>多年来，MAHE凭借卓越的技术实力、优质的产品质量和完善的售后服务，与众多世界500强企业建立了长期稳定的合作关系，业务遍及全球上百个国家和地区。</p>
                     <a href="#services" class="btn">了解业务</a>
                 </div>
@@ -381,10 +388,10 @@
             <h2 class="section-title">团队优势</h2>
             <div class="team-cards">
                 <div class="team-card">
-                    <img src="https://github.com/MaherJon/MAHE/blob/main/Image.jpg" alt="团队成员">
+                    <!-- 修复后的GitHub图片路径（raw地址） -->
+                    <img src="https://github.com/MaherJon/MAHE/raw/main/Image.jpg" alt="团队成员MaherJon" loading="lazy">
                     <h4>MaherJon</h4>
                     <p>CEO · 微小型项目专家 · MAHE首席开发者</p>
-                </div>
             </div>
         </div>
     </section>
@@ -396,8 +403,8 @@
             <div class="contact">
                 <div class="contact-info">
                     <h3>与我们携手，共创未来</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 公司地址：山东省淄博市樱红村14号</p>
-                    <p><i class="fas fa-phone"></i> 联系电话：400-888-8888</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 公司地址：MAHE科技大厦</p>
+                    <p><i class="fas fa-phone"></i> 联系电话：400-8888-8888</p>
                     <p><i class="fas fa-envelope"></i> 电子邮箱：info@mahe-tech.com</p>
                     <p><i class="fas fa-clock"></i> 工作时间：周一至周五 9:00-18:00</p>
                 </div>
@@ -417,7 +424,7 @@
     <!-- 页脚 -->
     <footer>
         <div class="container">
-            <p>© 2025 MAHE科技有限公司 版权所有</p>
+            <p>© 2025 MAHE科技有限公司 版权所有 | 京ICP备XXXXXXXX号</p>
         </div>
     </footer>
 
@@ -461,5 +468,4 @@
         });
     </script>
 </body>
-
 </html>
